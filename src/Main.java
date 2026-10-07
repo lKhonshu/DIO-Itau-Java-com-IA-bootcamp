@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.time.OffsetDateTime;
 
 public class Main {
 
@@ -56,5 +57,53 @@ public class Main {
         var binaryResult = Integer.toBinaryString(result);
         System.out.printf(" %s | %s = %s (representacao binaria %s)\n", value3, value4, result, binaryResult);
         
+        // Exercicios
+        /*
+
+        1-Escreva um código que receba o nome e o ano de nascimento de alguém e imprima na tela a seguinte mensagem: "Olá 'Fulano' você tem 'X' anos"
+
+        2-Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela
+            fórmula: área=lado X lado
+
+        3-Escreva um código que receba a base e a alturade um retângulo, calcule sua área e exiba na tela
+            fórmula: área=base X altura
+
+        4-Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas
+       */
+        //1
+        System.out.println("Informe o seu nome:");
+        var baseYear = OffsetDateTime.now().getYear();
+        var name2 = scanner.next();
+        System.out.println("Informe o seu ano de nascimento:");
+        var birthYear = scanner.nextInt();
+        var age2 = baseYear - birthYear;
+        System.out.printf("Ola %s voce tem %s anos\n", name2, age2);
+
+        //2
+        System.out.println("Informe o lado do quadrado");
+        var side = scanner.nextFloat();
+        var area = side * side;
+        System.out.printf("A area do quadrado é %s\n", area);
+
+        //3
+        System.out.println("Informe a base do retangulo:");
+        var base = scanner.nextFloat();
+        System.out.println("Informe a altura do retangulo:");
+        var height = scanner.nextFloat();
+        var areaRectangle = base * height;
+        System.out.printf("A area do retangulo é %s\n", areaRectangle);
+
+        //4
+        System.out.println("Informe o nome da primeira pessoa:");
+        var name3 = scanner.next();
+        System.out.println("Informe a idade da primeira pessoa:");
+        var age3 = scanner.nextInt();
+        System.out.println("Informe o nome da segunda pessoa:");
+        var name4 = scanner.next();
+        System.out.println("Informe a idade da segunda pessoa:");
+        var age4 = scanner.nextInt();
+        var ageDifference = age3 - age4;
+        System.out.printf("%s tem %s anos e %s tem %s anos\n", name3, age3, name4, age4);
+        System.out.printf("A diferenca de idade entre %s e %s é %s\n", name3, name4, ageDifference);
     }
 }

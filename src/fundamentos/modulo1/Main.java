@@ -1,3 +1,5 @@
+package fundamentos.modulo1;
+
 import java.util.Scanner;
 import java.time.OffsetDateTime;
 

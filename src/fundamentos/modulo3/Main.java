@@ -8,5 +8,11 @@ public class Main {
         System.out.println("Male name: " + male.getName() + " age: " + male.getAge());
         System.out.println("Female name: " + female.getName() + " age: " + female.getAge());
 
+        // AULA 2 - Trabalhando com records
+        var recordPerson = new PersonRecord("Pedro", 23);
+        System.out.println(recordPerson.getInfo());
+
+        var recordPerson2 = new PersonRecord("Maria");
+        System.out.println(recordPerson2.getInfo());
     }
 }

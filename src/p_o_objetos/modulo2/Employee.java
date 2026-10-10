@@ -1,11 +1,27 @@
 package p_o_objetos.modulo2;
 
 public sealed abstract class Employee permits Salesman, Manager {
-    private String code;
-    private String name;
-    private String address;
-    private int age;
-    private double salary;
+    protected String code;
+    protected String name;
+    protected String address;
+    protected int age;
+    protected double salary;
+
+    public Employee(String code,
+            String name,
+            String address,
+            int age,
+            double salary) {
+        this.code = code;
+        this.name = name;
+        this.address = address;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    public Employee() {
+
+    }
 
     public void setCode(String code) {
         this.code = code;
@@ -45,6 +61,12 @@ public sealed abstract class Employee permits Salesman, Manager {
 
     public double getSalary() {
         return salary;
+    }
+
+    public abstract double getFullSalary();
+
+    public double getFullSalary(double extra) {
+        return this.getFullSalary() + extra;
     }
 
 }

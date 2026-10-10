@@ -1,4 +1,4 @@
-package fundamentos.modulo3;
+package p_o_objetos.modulo1;
 
 import java.util.Scanner;
 

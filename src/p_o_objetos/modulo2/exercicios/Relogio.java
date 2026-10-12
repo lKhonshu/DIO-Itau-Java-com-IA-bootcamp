@@ -1,6 +1,6 @@
 package p_o_objetos.modulo2.exercicios;
 
-public class Relogio {
+public abstract class Relogio {
     protected int hora;
     protected int minuto;
     protected int segundo;
@@ -35,7 +35,6 @@ public class Relogio {
         this.segundo = segundo;
     }
 
-    public String toString() {
-        return hora + ":" + minuto + ":" + segundo;
-    }
+    public abstract String toString();
+
 }

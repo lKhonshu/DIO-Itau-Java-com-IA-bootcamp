@@ -28,11 +28,11 @@ public class GenericDomain<T> {
             return true;
         if (!(o instanceof GenericDomain that))
             return false;
-        return this.id.equals(that.id);
+        return Objects.equals(this.id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hashCode(id);
     }
 }

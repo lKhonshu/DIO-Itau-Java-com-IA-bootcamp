@@ -1,8 +1,11 @@
 package p_o_objetos.modulo4;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -96,5 +99,12 @@ public class Main {
         System.out.println(dao.delete(user));
         System.out.println(dao.findAll());
         System.out.println(dao.count());
+
+        // DATE
+        var milliseconds = System.currentTimeMillis();
+        var date = new Date(milliseconds);
+        DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss");
+        System.out.println(date);
+        System.out.println(formatter.format(date));
     }
 }

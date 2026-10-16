@@ -1,8 +1,4 @@
-package modulo5;
-
-import java.io.FileOutputStream;
-
-import javax.management.RuntimeErrorException;
+package p_o_objetos.modulo5;
 
 public class Main {
     public static void main(String[] args) {

@@ -7,10 +7,10 @@ import dio.taskmanager.domain.TaskRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GetTaskByIdUseCasse {
+public class GetTaskByIdUseCase {
     private final TaskRepository repository;
 
-    public GetTaskByIdUseCasse(TaskRepository repository){
+    public GetTaskByIdUseCase(TaskRepository repository){
         this.repository = repository;
     }
 

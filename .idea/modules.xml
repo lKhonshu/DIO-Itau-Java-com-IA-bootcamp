@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DIO-Itau-Java.iml" filepath="$PROJECT_DIR$/.idea/DIO-Itau-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taskmanager.main.iml" filepath="$PROJECT_DIR$/.idea/modules/taskmanager.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taskmanager.test.iml" filepath="$PROJECT_DIR$/.idea/modules/taskmanager.test.iml" />
     </modules>
   </component>
 </project>
